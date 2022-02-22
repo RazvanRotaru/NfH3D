@@ -48,7 +48,7 @@ public class BaloonController : MonoBehaviour
 
         float heightOffset = Mathf.Sin(percentRemaining * Mathf.PI);
         transform.position = originPos;
-        transform.position += direction * path ;
+        transform.position += direction * path;
         transform.position += heightOffset * Vector3.up;
         //transform.position += direction.normalized * speed * Time.deltaTime;
         path += speed * Time.deltaTime;
